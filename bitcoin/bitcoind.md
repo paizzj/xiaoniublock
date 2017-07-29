@@ -90,7 +90,8 @@ bool AppInit(int argc , char *argv) 见文件~/bitcoin/src/bitcoind.cpp
 其种从4a 开始就是函数AppInitMain() 主要的流程
 
 
-
+### 4a: application initialization    
+### 5: verify wallet database integrity   
 						    
 
 
