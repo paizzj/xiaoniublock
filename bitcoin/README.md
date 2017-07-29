@@ -26,10 +26,10 @@
    具体的实现细节需要掌握编程语言（c/c++， go） , 如果仅仅想了解比特币为基础的代码, eth 也有c++实现，所以c++是必须的 。 
    我整理了看比特币源码对自己帮助最大的一些资料和参考书。
    
-   * P2P 参考书： https://union-click.jd.com/jdc?d=oGNekr
-   * C++参考书： 标准库的 : https://union-click.jd.com/jdc?d=39XS7i
-   * boost 库：https://union-click.jd.com/jdc?d=Fv77Bs
-   * Ocaml参考： 这个对想学习tezos的可以了解下，目测国内没几个人玩这个，https://union-click.jd.com/jdc?d=QQq61i
+   * P2P 参考书：[P2P系统及其应用][p2p]
+   * C++参考书： [C++标准库][c++] 
+   * boost 库：  [boost程序库完全指南][boost]
+   * Ocaml参考： [Real World OCaml][ocaml]这个对想学习tezos的可以了解下，目测国内没几个人玩这个
 
 # 体会
    关于blockchain的技术背景，其实没有一个是新的，有的甚至是10几年前的东西。
@@ -39,9 +39,10 @@
    包括李笑来解释的什么是blockchian, 这些解释都是面向大众的投资者做的正确的说明而已，
    程序员应该用这些解释说明去和源码的实现做下对应，这样才能加深理解，也就不会被一些很高大上的词给蒙了，也就可以帮助大家做投资决策了。
 
-
-
-
+[p2p]: https://union-click.jd.com/jdc?d=oGNekr
+[c++]: https://union-click.jd.com/jdc?d=39XS7i
+[boost]:https://union-click.jd.com/jdc?d=Fv77Bs
+[ocaml]:https://union-click.jd.com/jdc?d=QQq61i
 
 
 
