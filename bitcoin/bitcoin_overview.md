@@ -25,5 +25,6 @@
 在src/qt目录下生成UI界面的：
 * bitcoin-qt :  bitcoin-qt
 
-主要部分是： bitcoind 和 带UI的 bitcoin-qt 两大部分。
+主要部分是： [bitcoind](/bitcoind.md/) 和 带UI的 bitcoin-qt 两大部分。
 我们可以先把重点放在命令行界面的： bitcoind程序上。
+
