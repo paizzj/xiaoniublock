@@ -15,24 +15,41 @@ int main(int argc, char* argv[])
 }
 </code></pre>
 
-* SetupEnviroment()    
+## SetupEnviroment()    
 SetupEnvironment()见文件util.h/util.cpp     
 功能: 主要设置语言环境。    
 详细的语言设置参见：[c++标准库][c++]第16章   
 
 
-* noui_connect()   
+## noui_connect()   
 noui_connect()  见文件noui.h/nohui.cpp    
 功能: 主要是设置信号处理函数。    
 详细的信号处理函数用法 ：参见[boost程序库完全参考指南][boost]第11章(函数与回调)signals2   
 
 
-* AppInit()
+## AppInit()
+bool AppInit(int argc , char *argv) 见文件~/bitcoin/src/bitcoind.cpp
+功能:     
+* 参数，配置文件解析然后设置相应的值。
+* 然后是依次初始化以下行数     
+  InitLogging()   
+  InitParameterInteraction()
+  AppInitBasicSetup()     
+  AppInitParameterInteraction()    
+  AppInitSanityChecks()    
+  daemon()    
+  AppInitLockDataDirectory()   
+  AppInitMain() ---> 这个函数包含了最重要的初始化步骤           
+  以上函数具体声明在文件~/bitcoin/src/init.h      
+
+* 终端线程配置
+   Interrupt()    
+   Shutdown()   
+ 
 
 
-
-
-
+## AppInitMain() ---> 这个函数包含了最重要的初始化步骤           
+见文件 ~/bitcoin/src/init.cpp    
 
 
 
