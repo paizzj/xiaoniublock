@@ -6,18 +6,15 @@
 <pre><code>
 int main(int argc, char* argv[])
 {
-    [SetupEnvironment();][#setup]
+    SetupEnvironment();
 
     // Connect bitcoind signal handlers
-        [noui_connect();][#connect]
+    noui_connect();
 
-    return [(AppInit(argc, argv) ? EXIT_SUCCESS : EXIT_FAILURE);][init]
+    return (AppInit(argc, argv) ? EXIT_SUCCESS : EXIT_FAILURE);
 }
 </code></pre>
 
-<span id="setup">SetupEnvironment()</span>
-<span id="connect">noui_connect()</span>
-<span id="init">AppInit()</span>
 
 		    
 
