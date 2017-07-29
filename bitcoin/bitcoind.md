@@ -1,6 +1,20 @@
 # bitcoind: Bitcoin Core Daemon , 比特币核心守护进程
 
-源码文件位置: [~/bitcoin/src/bitcoind.cpp][bitcoind]
+源码文件位置: [~/bitcoin/src/bitcoind.cpp][bitcoind]     
+<pre><code>
+main() 
+       --> SetupEnviroment()   
+       --> noui_connect()   
+       --> AppInit()   	   
+       	           -->  InitLogging()   
+		   -->  InitParameterInteraction()    
+		   -->  AppInitBasicSetup()     
+		   -->  AppInitParameterInteraction()    
+		   -->  AppInitSanityChecks()    
+		   -->  daemon()    
+		   -->	AppInitLockDataDirectory()   
+		   -->	AppInitMain() ---> 这个函数包含了最重要的初始化步骤           
+</code></pre>
 
 ## 入口函数
 <pre><code>
@@ -33,7 +47,7 @@ bool AppInit(int argc , char *argv) 见文件~/bitcoin/src/bitcoind.cpp
 * 参数，配置文件解析然后设置相应的值。
 * 然后是依次初始化以下行数     
   InitLogging()   
-  InitParameterInteraction()
+  InitParameterInteraction()    
   AppInitBasicSetup()     
   AppInitParameterInteraction()    
   AppInitSanityChecks()    
@@ -42,7 +56,7 @@ bool AppInit(int argc , char *argv) 见文件~/bitcoin/src/bitcoind.cpp
   AppInitMain() ---> 这个函数包含了最重要的初始化步骤           
   以上函数具体声明在文件~/bitcoin/src/init.h      
 
-* 终端线程配置
+* 中断线程配置
    Interrupt()    
    Shutdown()   
  
