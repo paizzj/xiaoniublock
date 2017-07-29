@@ -1,4 +1,5 @@
-# bitcoind: Bitcoin Core Daemon , 比特币核心守护进程
+# bitcoind   
+Bitcoin Daemon , 比特币核心守护进程
 
 源码文件位置: [~/bitcoin/src/bitcoind.cpp][bitcoind]     
 主要流程如下
