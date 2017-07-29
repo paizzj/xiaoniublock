@@ -14,25 +14,25 @@
 
 
 # 整理框架
-   1，比特币及其为基础衍生： bitcoin, namecoin, zcash, qtum 等
-   2，以太坊为基础的衍生： eth,  eth上开发的DAPP， sia( 严格意义上sia代码层面没有借鉴eth，
+   ## 比特币及其为基础衍生： bitcoin, namecoin, zcash, qtum 等
+   ## 以太坊为基础的衍生： eth,  eth上开发的DAPP， sia( 严格意义上sia代码层面没有借鉴eth，
       只是重新实现了智能合约的概念，但是其简单直接的业务场景非常好，private cloud. )
-   3，steem，bts, eos 为基础的
-   4，tezos （这里为什么提到tezos， 是因为其筹集规模，投资团队，研发团队，技术实现都很特别）
+   ## steem，bts, eos 为基础的
+   ## tezos （这里为什么提到tezos， 是因为其筹集规模，投资团队，研发团队，技术实现都很特别）
 
 
 # 技术参考资料
    经过一段时间的学习，就2块理论需要掌握：p2p( 对等网络，不是p2p网贷), 密码协议。
    具体的实现细节需要掌握编程语言（c/c++， go） , 如果仅仅想了解比特币为基础的代码, eth 也有c++实现，所以c++是必须的 。 
    我整理了看比特币源码对自己帮助最大的一些资料和参考书。
-      P2P 参考书： https://union-click.jd.com/jdc?d=oGNekr
-      C++参考书： 标准库的 : https://union-click.jd.com/jdc?d=39XS7i
-      boost 库：https://union-click.jd.com/jdc?d=Fv77Bs
-      Ocaml参考： 这个对想学习tezos的可以了解下，目测国内没几个人玩这个，https://union-click.jd.com/jdc?d=QQq61i
+   ## P2P 参考书： https://union-click.jd.com/jdc?d=oGNekr
+   ## C++参考书： 标准库的 : https://union-click.jd.com/jdc?d=39XS7i
+   ## boost 库：https://union-click.jd.com/jdc?d=Fv77Bs
+   ## Ocaml参考： 这个对想学习tezos的可以了解下，目测国内没几个人玩这个，https://union-click.jd.com/jdc?d=QQq61i
 
 # 体会
-   关于blockchain的技术背景，其实没有一个是新的，有的甚至是10几年前的东西。
-   对于一些术语的理解，其实已经有很多资料解释了，但是对于程序员来说还远远不够，
+   ## 关于blockchain的技术背景，其实没有一个是新的，有的甚至是10几年前的东西。
+   ## 对于一些术语的理解，其实已经有很多资料解释了，但是对于程序员来说还远远不够，
    包括李笑来解释的什么是blockchian, 这些解释都是面向大众的投资者做的正确的说明而已，
    程序员应该用这些解释说明去和源码的实现做下对应，这样才能加深理解，也就不会被一些很高大上的词给蒙了，也就可以帮助大家做投资决策了。
 
