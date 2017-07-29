@@ -16,14 +16,19 @@ find . \( -path ./qt  -o -path ./leveldb  -o -path ./bench  -o -path ./test -o -
 
 ## 当我们完全编译的时候，
 
-在src目录下分别生成可执行程序：
+在src目录下分别生成可执行程序:
+
 bitcoin-cli : bitcoin-cli rpc client
+
 bitcoind   :  bitcoind 核心
+
 bitcoin-tx :  bitcoin-tx utilty
 
 在src/qt目录下生成UI界面的：
+
 bitcoin-qt :  bitcoin-qt
 
 
 主要部分是： bitcoind 和 带UI的 bitcoin-qt 两大部分。
+
 我们可以先把重点放在命令行界面的： bitcoind程序上。
