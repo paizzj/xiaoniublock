@@ -15,6 +15,8 @@ main()
 		   -->  daemon()    
 		   -->	AppInitLockDataDirectory()   
 		   -->	AppInitMain() ---> 这个函数包含了最重要的初始化步骤           
+		   -->  Interrupt()    
+		   -->  Shutdown()   
 </code></pre>
 
 ## 入口函数
@@ -65,6 +67,38 @@ bool AppInit(int argc , char *argv) 见文件~/bitcoin/src/bitcoind.cpp
 
 ## AppInitMain() ---> 这个函数包含了最重要的初始化步骤           
 见文件 ~/bitcoin/src/init.cpp    
+当我们仔细看init.cpp文件是，注意到代码中的注释已经把整个的初始化流程表达清楚了
+通过命令> grep "Step" init.cpp       
+    // ********************************************************* Step 1: setup     
+    // ********************************************************* Step 2: parameter interactions    
+    // ********************************************************* Step 3: parameter-to-internal-flags   
+    // ********************************************************* Step 4: sanity checks   
+    // ********************************************************* Step 4a: application initialization   
+    // ********************************************************* Step 5: verify wallet database integrity   
+    // ********************************************************* Step 6: network initialization   
+    // ********************************************************* Step 7: load block chain   
+    // ********************************************************* Step 8: load wallet   
+    // ********************************************************* Step 9: data directory maintenance   
+    // ********************************************************* Step 10: import blocks   
+    // ********************************************************* Step 11: start node    
+    // ********************************************************* Step 12: finished   
+
+
+其种从4a 开始就是函数AppInitMain() 主要的流程
+
+
+
+						    
+
+
+
+
+
+
+
+
+
+
 
 
 
