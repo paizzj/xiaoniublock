@@ -9,7 +9,7 @@
    这次入场，不想再走原来的老路，给自己定了小目标，一定先看懂代码是咋回事儿，再去玩blockchain。
 
 # 突破口
-   认证研读了INBlockchain 的开源区块链 ICO 投资原则：https://github.com/xiaolai/INB-Principles/blob/master/Chinese.md
+   认证研读了INBlockchain 的开源区块链 ICO [投资原则][inblockchain]
    然后自己去研究了下文中提到的几个币（sia, namecoin, zcash, qtum, eos），随后下载了他们的源码开始蜗牛般的阅读。
 
 
@@ -43,7 +43,7 @@
 [c++]: https://union-click.jd.com/jdc?d=39XS7i
 [boost]:https://union-click.jd.com/jdc?d=Fv77Bs
 [ocaml]:https://union-click.jd.com/jdc?d=QQq61i
-
+[inblockchain]:https://github.com/xiaolai/INB-Principles/blob/master/Chinese.md
 
 
 
