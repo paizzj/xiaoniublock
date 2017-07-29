@@ -3,7 +3,7 @@
 源码文件位置: [~/bitcoin/src/bitcoind.cpp][bitcoind]
 
 ## 入口函数
-<code>
+<pre><code>
 int main(int argc, char* argv[])
 {
     SetupEnvironment();
@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
 
     return (AppInit(argc, argv) ? EXIT_SUCCESS : EXIT_FAILURE);
 }
-</code>
+</code></pre>
 
 * SetupEnviroment()    
 SetupEnvironment()见文件util.h/util.cpp     
