@@ -3,7 +3,7 @@
 源码文件位置: [~/bitcoin/src/bitcoind.cpp][bitcoind]
 
 ## 入口函数
-<pre><code>
+<code>
 int main(int argc, char* argv[])
 {
     SetupEnvironment();
@@ -13,9 +13,9 @@ int main(int argc, char* argv[])
 
     return (AppInit(argc, argv) ? EXIT_SUCCESS : EXIT_FAILURE);
 }
-</code></pre>
+</code>
 
-* SetupEnviroment()
+* SetupEnviroment()    
 SetupEnvironment()见文件util.h/util.cpp     
 功能: 主要设置语言环境。    
 详细的语言设置参见：[c++标准库][c++]第16章   
