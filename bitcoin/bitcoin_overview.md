@@ -1,7 +1,7 @@
 # bitcoin 源码概览
 我们分析bitcoin的核心源码的时候，最好是先看下源码目录下的文档：
 
-~/bitcoin/doc/build-unix.md (~/bitcoin是源码所在的目录)
+\~/bitcoin/doc/build-unix.md (bitcoin是源码所在的目录)
 
 其中描述了怎么在unix(linux)下编译比特币源码，其中包含了一些必备的库。
 其中几个必须的库：libssl,  libboost, libevent.
