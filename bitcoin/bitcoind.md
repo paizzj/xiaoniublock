@@ -69,7 +69,9 @@ bool AppInit(int argc , char *argv) 见文件~/bitcoin/src/bitcoind.cpp
 ## AppInitMain() ---> 这个函数包含了最重要的初始化步骤           
 见文件 ~/bitcoin/src/init.cpp    
 当我们仔细看init.cpp文件是，注意到代码中的注释已经把整个的初始化流程表达清楚了        
-通过命令> grep "Step" init.cpp       
+通过执行命令      
+> grep "Step" init.cpp      
+得到如下结果：                         
     // ********************************************************* Step 1: setup     
     // ********************************************************* Step 2: parameter interactions    
     // ********************************************************* Step 3: parameter-to-internal-flags   
