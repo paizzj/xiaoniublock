@@ -1,4 +1,7 @@
->bool AppInitMain(boost::thread_group& threadGroup, CScheduler& scheduler)      
+# AppInitMain
+
+>bool AppInitMain(boost::thread_group& threadGroup, CScheduler& scheduler)
+
 我们先看函数的两个参数，threadGroup, 和 scheduler. 从字面意思理解前者是
 线程组(threadGroup), 后者是调度器(scheduler), 这个时候可以想象下线程组和
 调度器协同工作的场景: 调度器去调度线程组中的线程协同工作。
