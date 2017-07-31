@@ -100,8 +100,8 @@ bool AppInit(int argc , char *argv) 见文件~/bitcoin/src/bitcoind.cpp
 ### 11: start node (启动p2p节点 )     
 ### 12: finished   
 
-						    
-
+接下来就是要分析AppInitMain()函数详细的流程          
+[AppInitMain][appinitmain]
 
 
 
@@ -121,4 +121,4 @@ bool AppInit(int argc , char *argv) 见文件~/bitcoin/src/bitcoind.cpp
 [bitcoind]:https://github.com/bitcoin/bitcoin/blob/master/src/bitcoind.cpp
 [c++]: https://union-click.jd.com/jdc?d=39XS7i
 [boost]:https://union-click.jd.com/jdc?d=Fv77Bs
-
+[appinitmain]:./AppInitMain.md
