@@ -3,7 +3,7 @@
 ## 背景
    我是个码农也是个典型的失败的投机者，13年接触了挖矿，去买了阿瓦隆矿机，挖了几十币600 RMB单价出的。    
    当初也去下载了比特币的源码，看过，但是没看懂，然后就作罢。期间断断续续折腾了很多事情，依然没头绪。    
-   16年买了《把时间当做朋友》，人困惑的时候从书里最能找到解决的方法。17年5月重新入场。       
+   16年买了[把时间当做朋友][metathink]，人困惑的时候从书里最能找到解决的方法。17年5月重新入场。       
 
 ## 目的
    这次入场，不想再走原来的老路，给自己定了小目标，一定先看懂代码是咋回事儿，再去玩blockchain。
@@ -36,7 +36,8 @@
    关于blockchain的技术背景，其实没有一个是新的，有的甚至是10几年前的东西。   
    对于一些术语的理解，其实已经有很多资料解释了，但是对于程序员来说还远远不够，    
    包括李笑来解释的什么是blockchian, 这些解释都是面向大众的投资者做的正确的说明而已，   
-   程序员应该用这些解释说明去和源码的实现做下对应，这样才能加深理解，也就不会被一些很高大上的词给蒙了，也就可以帮助大家做投资决策了。    
+   程序员应该用这些解释说明去和源码的实现做下对应，这样才能加深理解，              
+   也就不会被一些很高大上的词给蒙了，也就可以帮助大家做投资决策了。        
 
 [p2p]: https://union-click.jd.com/jdc?d=oGNekr
 [c++]: https://union-click.jd.com/jdc?d=39XS7i
@@ -44,7 +45,7 @@
 [ocaml]:https://union-click.jd.com/jdc?d=QQq61i
 [crypt]:https://union-click.jd.com/jdc?d=jvvVSF
 [inblockchain]:https://github.com/xiaolai/INB-Principles/blob/master/Chinese.md
-
+[metathink]:https://union-click.jd.com/jdc?d=gQ9sXp
 
 
 
