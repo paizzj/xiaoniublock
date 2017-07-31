@@ -30,6 +30,7 @@
    * C++参考书： [C++标准库][c++] 
    * boost 库：  [boost程序库完全指南][boost]
    * Ocaml参考： [Real World OCaml][ocaml]这个对想学习tezos的可以了解下，目测国内没几个人玩这个
+   * 密码协议：  [应用密码学：协议、算法与C源程序（原书第2版）][crypt]
 
 ## 体会
    关于blockchain的技术背景，其实没有一个是新的，有的甚至是10几年前的东西。   
@@ -41,6 +42,7 @@
 [c++]: https://union-click.jd.com/jdc?d=39XS7i
 [boost]:https://union-click.jd.com/jdc?d=Fv77Bs
 [ocaml]:https://union-click.jd.com/jdc?d=QQq61i
+[crypt]:https://union-click.jd.com/jdc?d=jvvVSF
 [inblockchain]:https://github.com/xiaolai/INB-Principles/blob/master/Chinese.md
 
 
