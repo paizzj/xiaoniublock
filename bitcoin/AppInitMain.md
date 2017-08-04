@@ -21,7 +21,7 @@
 然后启动HTTP server:         
 AppInitServers(threadGroup);            
 
-## 校验钱包数据库的完整性(verify wallet database integrity)
+## 5 校验钱包数据库的完整性(verify wallet database integrity)
 > #ifdef ENABLE_WALLET                  
     if (!CWallet::Verify())                  
        return false;                   
