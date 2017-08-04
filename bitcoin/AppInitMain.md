@@ -11,15 +11,15 @@
 通过初始化签名和脚步执行缓存，然后通过创建nScriptCheckThreads个线程去检查校验脚本。
 
 接着创建一个轻量级的任务调度器，这个调度器是一个线程:            
- // Start the lightweight task scheduler thread                  
+> // Start the lightweight task scheduler thread                  
  CScheduler::Function serviceLoop = boost::bind(&CScheduler::serviceQueue, &scheduler);                             
  threadGroup.create_thread(boost::bind(&TraceThread<CScheduler::Function>, "scheduler", serviceLoop));                         
                    
 注册这个线程到后台信号调度器中:                    
- GetMainSignals().RegisterBackgroundSignalScheduler(scheduler);                 
+> GetMainSignals().RegisterBackgroundSignalScheduler(scheduler);                 
                        
 然后启动HTTP server:         
-AppInitServers(threadGroup);            
+>AppInitServers(threadGroup);            
 
 ## 5 校验钱包数据库的完整性(verify wallet database integrity)
 > #ifdef ENABLE_WALLET                  
