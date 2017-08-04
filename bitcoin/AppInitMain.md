@@ -22,10 +22,10 @@
 AppInitServers(threadGroup);            
 
 ## 校验钱包数据库的完整性(verify wallet database integrity)
-> #ifdef ENABLE_WALLET
-    if (!CWallet::Verify())
-       return false;
-  #endif
+> #ifdef ENABLE_WALLET                  
+    if (!CWallet::Verify())                  
+       return false;                   
+  #endif                  
    
 当编译的时候，只有开启了钱包功能，才会执行校验钱包数据库。
 
