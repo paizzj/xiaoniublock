@@ -30,7 +30,7 @@
 当编译的时候，只有开启了钱包功能，才会执行校验钱包数据库。
 
 ## 6 网络初始化 (network initialization)
-<pre><code> assert(!g_connman);
+<pre><code>	assert(!g_connman);
     g_connman = std::unique_ptr<CConnman>(new CConnman(GetRand(std::numeric_limits<uint64_t>::max()), GetRand(std::numeric_limits<uint64_t>::max())));
     CConnman& connman = *g_connman;
 
