@@ -29,14 +29,14 @@
    
 当编译的时候，只有开启了钱包功能，才会执行校验钱包数据库。
 
-## 6 网络初始化 (network initialization)
-<pre><code> assert(!g_connman);
-    g_connman = std::unique_ptr<CConnman>(new CConnman(GetRand(std::numeric_limits<uint64_t>::max()), GetRand(std::numeric_limits<uint64_t>::max())));
-    CConnman& connman = *g_connman;
+## 6 网络初始化 (network initialization)      
+	    assert(!g_connman);
+	    g_connman = std::unique_ptr<CConnman>(new CConnman(GetRand(std::numeric_limits<uint64_t>::max()), GetRand(std::numeric_limits<uint64_t>::max())));
+	    CConnman& connman = *g_connman;
 
-    peerLogic.reset(new PeerLogicValidation(&connman));
-    RegisterValidationInterface(peerLogic.get());
-    RegisterNodeSignals(GetNodeSignals());</code></pre>
+	    peerLogic.reset(new PeerLogicValidation(&connman));
+	    RegisterValidationInterface(peerLogic.get());
+	    RegisterNodeSignals(GetNodeSignals());      
 以上主要初始化两个对象： CConnman 和 PeerLogicValidation. 前者是网络连接的管理类， 后者是对等逻辑验证类.                   
 
 接着处理参数：                     
