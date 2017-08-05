@@ -10,7 +10,8 @@
 ## 4a 应用初始化(application initialization)
 通过初始化签名和脚步执行缓存，然后通过创建nScriptCheckThreads个线程去检查校验脚本。
 
-接着创建一个轻量级的任务调度器，这个调度器是一个线程:
+接着创建一个轻量级的任务调度器，这个调度器是一个线程:           
+
 	    // Start the lightweight task scheduler thread                  
     	    CScheduler::Function serviceLoop = boost::bind(&CScheduler::serviceQueue, &scheduler);                             
     	    threadGroup.create_thread(boost::bind(&TraceThread<CScheduler::Function>, "scheduler", serviceLoop));</code></pre>		                         
