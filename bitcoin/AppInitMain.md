@@ -45,7 +45,7 @@
 * -uacomment, -onlynet, -dns, [.onion][onion], -proxy,                                
 * -listen", -discover, -blocksonly, -externalip, -maxloadtarget                      
 
-然后如果开启了ZMQ，初始化ZMQ. 这是一个消息管理器，zeromq,参见: http://zeromq.org               
+然后如果开启了ZMQ，初始化ZMQ. 这是一个消息管理器，[zeromq][zmq]
 <pre><code>   
 #if ENABLE_ZMQ
     pzmqNotificationInterface = CZMQNotificationInterface::Create();
@@ -64,3 +64,4 @@
 
 
 [onion]:https://en.wikipedia.org/wiki/.onion
+[zmq]:http://zeromq.org
