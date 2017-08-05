@@ -29,6 +29,33 @@
    
 当编译的时候，只有开启了钱包功能，才会执行校验钱包数据库。
 
+## 6 网络初始化 (network initialization)
+<pre><code>
+    assert(!g_connman);
+    g_connman = std::unique_ptr<CConnman>(new CConnman(GetRand(std::numeric_limits<uint64_t>::max()), GetRand(std::numeric_limits<uint64_t>::max())));
+    CConnman& connman = *g_connman;
+
+    peerLogic.reset(new PeerLogicValidation(&connman));
+    RegisterValidationInterface(peerLogic.get());
+    RegisterNodeSignals(GetNodeSignals());
+</code></pre>
+以上主要初始化两个对象： CConnman 和 PeerLogicValidation. 前者是网络连接的管理类， 后者是对等逻辑验证类.                   
+
+接着处理参数：                     
+* "-uacomment", "-onlynet", "-dns", ".onion", "-proxy",                                
+* "-listen", "-discover", "-blocksonly", "-externalip", "-maxloadtarget"                      
+
+然后如果开启了ZMQ，初始化ZMQ. 这是一个消息管理器，zeromq,参见: http://zeromq.org               
+<pre><code>   
+#if ENABLE_ZMQ
+    pzmqNotificationInterface = CZMQNotificationInterface::Create();
+
+    if (pzmqNotificationInterface) {
+            RegisterValidationInterface(pzmqNotificationInterface);
+    }
+#endif
+</code></pre>		
+
 
 
 
