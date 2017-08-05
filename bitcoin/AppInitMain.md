@@ -11,9 +11,9 @@
 通过初始化签名和脚步执行缓存，然后通过创建nScriptCheckThreads个线程去检查校验脚本。
 
 接着创建一个轻量级的任务调度器，这个调度器是一个线程:            
-> // Start the lightweight task scheduler thread                  
+<pre><code> // Start the lightweight task scheduler thread                  
  CScheduler::Function serviceLoop = boost::bind(&CScheduler::serviceQueue, &scheduler);                             
- threadGroup.create_thread(boost::bind(&TraceThread<CScheduler::Function>, "scheduler", serviceLoop));                         
+ threadGroup.create_thread(boost::bind(&TraceThread<CScheduler::Function>, "scheduler", serviceLoop));</code></pre>		                         
                    
 注册这个线程到后台信号调度器中:                    
 > GetMainSignals().RegisterBackgroundSignalScheduler(scheduler);                 
@@ -30,8 +30,7 @@
 当编译的时候，只有开启了钱包功能，才会执行校验钱包数据库。
 
 ## 6 网络初始化 (network initialization)
-<pre><code>
-    assert(!g_connman);
+<pre><code>assert(!g_connman);
     g_connman = std::unique_ptr<CConnman>(new CConnman(GetRand(std::numeric_limits<uint64_t>::max()), GetRand(std::numeric_limits<uint64_t>::max())));
     CConnman& connman = *g_connman;
 
@@ -46,15 +45,13 @@
 * -listen", -discover, -blocksonly, -externalip, -maxloadtarget                      
 
 然后如果开启了ZMQ，初始化ZMQ. 这是一个消息管理器，[zeromq][zmq]
-<pre><code>   
-#if ENABLE_ZMQ
+<pre><code>#if ENABLE_ZMQ
     pzmqNotificationInterface = CZMQNotificationInterface::Create();
 
     if (pzmqNotificationInterface) {
             RegisterValidationInterface(pzmqNotificationInterface);
     }
-#endif
-</code></pre>		
+#endif</code></pre>		
 
 ## 7
 
