@@ -10,22 +10,22 @@
 ## 4a 应用初始化(application initialization)
 通过初始化签名和脚步执行缓存，然后通过创建nScriptCheckThreads个线程去检查校验脚本。
 
-接着创建一个轻量级的任务调度器，这个调度器是一个线程:            
-<pre><code> // Start the lightweight task scheduler thread                  
- CScheduler::Function serviceLoop = boost::bind(&CScheduler::serviceQueue, &scheduler);                             
- threadGroup.create_thread(boost::bind(&TraceThread<CScheduler::Function>, "scheduler", serviceLoop));</code></pre>		                         
+接着创建一个轻量级的任务调度器，这个调度器是一个线程:
+	    // Start the lightweight task scheduler thread                  
+    	    CScheduler::Function serviceLoop = boost::bind(&CScheduler::serviceQueue, &scheduler);                             
+    	    threadGroup.create_thread(boost::bind(&TraceThread<CScheduler::Function>, "scheduler", serviceLoop));</code></pre>		                         
                    
-注册这个线程到后台信号调度器中:                    
-> GetMainSignals().RegisterBackgroundSignalScheduler(scheduler);                 
+注册这个线程到后台信号调度器中:
+	    GetMainSignals().RegisterBackgroundSignalScheduler(scheduler);                 
                        
 然后启动HTTP server:         
 >AppInitServers(threadGroup);            
 
 ## 5 校验钱包数据库的完整性(verify wallet database integrity)
-> #ifdef ENABLE_WALLET                  
-    if (!CWallet::Verify())                  
-       return false;                   
-  #endif                  
+     #ifdef ENABLE_WALLET                  
+        if (!CWallet::Verify())                  
+          return false;                   
+     #endif                  
    
 当编译的时候，只有开启了钱包功能，才会执行校验钱包数据库。
 
