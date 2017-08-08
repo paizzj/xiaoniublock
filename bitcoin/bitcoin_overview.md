@@ -9,7 +9,7 @@
 ## 统计比特币源码行数：
 在 ~/bitcoin/src 目录下执行以下命令，忽略目录 leveldb , qt , test, bench, univalue, zmq.
 
->find . \( -path ./qt  -o -path ./leveldb  -o -path ./bench  -o -path ./test -o -path ./univalue -o -path ./zmq \) -prune -o -name \*.h -o -name \*.cpp | xargs wc -l
+>find . \\( -path ./qt  -o -path ./leveldb  -o -path ./bench  -o -path ./test -o -path ./univalue -o -path ./zmq \\) -prune -o -name \\*.h -o -name \\*.cpp | xargs wc -l
 
 我现在的版本(2017/7/29)是:86196行，以后我们就反复翻看着8万多行的代码，当然我们也要随时pull最新的代码，跟进最新的更新，相信这样持续1年以上会有不小的收货。
 
