@@ -4,11 +4,11 @@
 
 我们先看函数的两个参数，threadGroup, 和 scheduler. 从字面意思理解前者是
 线程组或者线程池(threadGroup), 后者是调度器(scheduler), 这个时候可以想象下线程组和
-调度器协同工作的场景: 调度器去调度线程池中的线程协同完成工作,注意调度器也是一个线程。     
+调度器协同工作的场景: 调度器去调度线程池中的线程协同完成工作,注意调度器也是一个线程.     
 是不是可以理解为比特币就是由线程池和调度器组成的？
 
 ## 4a 应用初始化(application initialization)
-通过初始化签名和脚步执行缓存，然后通过创建nScriptCheckThreads个线程去检查校验脚本。
+通过初始化签名和脚步执行缓存，然后通过创建nScriptCheckThreads个线程去检查校验脚本.
 
 接着创建一个轻量级的任务调度器，这个调度器是一个线程:           
 
@@ -28,7 +28,7 @@
           return false;                   
      #endif                  
    
-当编译的时候，只有开启了钱包功能，才会执行校验钱包数据库。
+当编译的时候，只有开启了钱包功能，才会执行校验钱包数据库.
 
 ## 6 网络初始化 (network initialization)      
 	    assert(!g_connman);
@@ -54,8 +54,8 @@
 #endif</code></pre>		
 
 ## 7 加载区块链 (load block chain)
-我们在看这部分的时候，需要了解区块的组成以及和交易相关的细节，                     
-这部分我们留在后面详细介绍，现在我们先把代码逻辑梳理下。
+我们在看这部分的时候，需要了解区块的组成以及和交易相关的细节,                     
+这部分我们留在后面详细介绍，现在我们先把代码逻辑梳理下.
 * 通过 -reindex 参数决定是否需要重建块索引
 * LoadBlockIndex(chainparams),根据参数加载块索引
 * LoadGenesisBlock(chainparams)，初始化块数据
@@ -71,9 +71,9 @@
 ## 9 数据目录管理(data directory maintenance)
 这部分有点难懂: 
 * fPruneMode 是什么意思?
-* DEPLOYMENT_SEGWIT 关于分叉 ？
+* DEPLOYMENT_SEGWIT 关于分叉? 
 
-这2部分后续继续再看看。
+这2部分后续继续再看看.
 
 ## 10 导入块数据( import block)
 * 这部和第7部: 加载块有什么区别呢？
