@@ -92,7 +92,7 @@ bool AppInit(int argc , char *argv) 见文件~/bitcoin/src/bitcoind.cpp
 
 ### 4a: application initialization(应用初始化)       
 ### 5:  verify wallet database integrity(验证钱包数据库完整性)          
-### 6： network initialization(p2p网络初始化)        
+### 6:  network initialization(p2p网络初始化)        
 ### 7:  load block chain (加载区块链)     
 ### 8:  load wallet (加载钱包)      
 ### 9:  data directory maintenance (维护数据目录)     
