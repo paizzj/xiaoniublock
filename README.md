@@ -6,10 +6,11 @@
     - [overview][ov]
     - [bitcoind][bd]
     - [appInitMain][main]
+    - [util][util] 
     
 [bitcoin]:https://github.com/paizzj/xiaoniublock/tree/master/bitcoin
 [ov]:https://github.com/paizzj/xiaoniublock/blob/master/bitcoin/bitcoin_overview.md
 [bd]:https://github.com/paizzj/xiaoniublock/blob/master/bitcoin/bitcoind.md
 [main]:https://github.com/paizzj/xiaoniublock/blob/master/bitcoin/AppInitMain.md
 [c11]:https://github.com/paizzj/xiaoniublock/blob/master/bitcoin/c%2B%2B11.md
-
+[util]: https://github.com/paizzj/xiaoniublock/tree/master/bitcoin/util
