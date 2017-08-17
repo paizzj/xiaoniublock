@@ -9,6 +9,8 @@
 到临时或持久性存储区。以后，可以通过从存储区中读取或反序列化对象的状态，重新创建该对象。           
 
 
+## 在bitcoin项目中，序列化相关的文件: [serialize.h][ser_src] 这个文件定义bitcoin项目中所有类的序列化操作，       
+   个别类除外,比如类CAddrMan是单独写了序列化操作。
 
 
 
@@ -30,5 +32,5 @@
 
 
 
-
+[ser_src]:https://github.com/bitcoin/bitcoin/blob/master/src/serialize.h
 [serialize]:http://blog.csdn.net/kiritow/article/details/53129096
