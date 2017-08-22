@@ -88,8 +88,8 @@ src/serialize.h :
     60	}
 </code></pre>
 * 42行到60行定义了2个模板函数，REF(), NCONST_PTR(),      
-  前者主要是从const类型转换到非const的引用类型.      
-  NCONST_PTR 是把const的指针类型转换为非const的指针类型.      
+  前者主要是从const类型转换到非const的引用类型.通过REF()转换后的对象可以当做lvalue & rvalue.      
+  NCONST_PTR 是把const的指针类型转换为非const的指针类型.
   这里涉及到常量引用和非常量引用的问题参考[const ref & nonconst ref][ref]
 
 <pre><code>
