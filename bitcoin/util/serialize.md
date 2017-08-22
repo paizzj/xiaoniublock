@@ -52,12 +52,17 @@ src/serialize.h :
    811	    p = std::make_shared<const T>(deserialize, is);
    812	}
 </code></pre>
-- 以上两处的模板函数定义是关于反序列化的unique_ptr 和shared_ptr的特化版本，      
-  那对照之前第39,40行定义的空类型deserialize，对以上2个特化版本的模板函数又是什么用呢？(TODO)
+- 以上两处的模板函数定义是关于反序列化的unique_ptr 和shared_ptr的特化版本，          
+  那对照之前第39,40行定义的空类型deserialize，对以上2个特化版本的模板函数又是什么用呢？(TODO)         
+  794行通过new调用类型T的构造函数，并传入参数deserialize, 和流is,然后unique_ptr的reset,让p拥有T.      
+  811行通过标准库中的函数make_shared分配类型为T的共享指针，并以参数deserialize,is传入.    
+  注意 794和811这两处都调用了类型T的构造函数，794行通过new关键词调用，811行通过make_shared调用.
+  
+  通过以上分析就解释了40行为什么要加修饰符constexpr，是因为deserialize 要作为构造函数的参数传入，      
+  而构造函数的参数一定要是个常量表达式(这里是猜测的，待验证TODO)      
 
-
-
-
+  最后还有个疑问，deserialize的作用到底是啥呢？看20行的注释，就是用来区分反序列化对象的构造函数的，          
+  那为什么要区分呢？ 这里只是一个约定，形如33行的声明的函数就约定是构造函数.
 
 
 
