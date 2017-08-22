@@ -87,8 +87,10 @@ src/serialize.h :
     59	    return const_cast<T*>(val);
     60	}
 </code></pre>
-* 42行到60行定义了2个模板函数，REF(), NCONST_PTR(), 前者主要是从const类型转换到非const的引用类型.
- NCONST_PTR 是把const的指针类型转换为非const的指针类型.
+* 42行到60行定义了2个模板函数，REF(), NCONST_PTR(),      
+  前者主要是从const类型转换到非const的引用类型.      
+  NCONST_PTR 是把const的指针类型转换为非const的指针类型.      
+  这里涉及到常量引用和非常量引用的问题参考[const ref & nonconst ref][ref]
 
 <pre><code>
     62	/*
@@ -508,7 +510,7 @@ src/serialize.h :
    465	template<typename I>
    466	CVarInt<I> WrapVarInt(I& n) { return CVarInt<I>(n); }
 </code></pre>
-* 276行到352行 主要是边长的整数处理.(TODO)       
+* 276行到352行 主要是变长的整数处理.(TODO)       
   354行到357行 定义了4个在需要序列化的类中用的的宏          
   360行到397行 定义了针对序列化数组和POD类型的封装类CFlatData        
   399行到416行 定义了变长整数类CVarInt        
@@ -1020,6 +1022,6 @@ serialize.h 文件的最后一部分:
 
 # 序列化总结 (TODO)
 
-
+[ref]:https://stackoverflow.com/questions/1565600/how-come-a-non-const-reference-cannot-bind-to-a-temporary-object
 [ser_src]:https://github.com/bitcoin/bitcoin/blob/master/src/serialize.h
 [serialize]:http://blog.csdn.net/kiritow/article/details/53129096
