@@ -1018,7 +1018,7 @@ serialize.h 文件的最后一部分:
 * 893行到964行 主要实现了序列化的多个参数版本(many结尾的函数).
 
 
-
+# 序列化总结 (TODO)
 
 
 [ser_src]:https://github.com/bitcoin/bitcoin/blob/master/src/serialize.h
