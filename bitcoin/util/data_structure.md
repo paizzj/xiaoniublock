@@ -6,7 +6,7 @@ db & ui:  存储和消息以及QT实现的UI部分
 
 base
 * base58
-* base_uint256, uint256, univalue
+* arith_uint256, uint256, univalue
 * hash
 * secp256k1
 * crypto, key, keystore, pubkey, random
