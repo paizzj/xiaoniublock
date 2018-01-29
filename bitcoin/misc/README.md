@@ -4,8 +4,9 @@
 
 - [lsh][lsh] 
 - [cf][cf]
-- [gyl][gyl] 
+- [gyl][gyl]
 
-[lsh]:
-[cf]:
-[gyl]:
+
+[lsh]:https://github.com/paizzj/xiaoniublock/blob/master/bitcoin/misc/sh.txt
+[cf]:https://github.com/paizzj/xiaoniublock/blob/master/bitcoin/misc/cf.txt
+[gyl]:https://github.com/paizzj/xiaoniublock/blob/master/bitcoin/misc/yl.txt
